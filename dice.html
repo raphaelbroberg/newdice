@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Adam -->
+  <!-- Ange ikonen för webbsidan. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/dice-6.png">
+  <!-- Titel för sidan. -->
+  <title>Four Player Dice Game</title>
+</head>
+
+<body>
+  <main>
+    <!-- Johan -->
+    <!-- Delen som visar spelarkorten, inklusive deras namn, poäng och aktuella poäng. -->
+    <section class="player-cards">
+      <!-- Player 0 Card -->
+      <div class="player player--0 player--active">
+        <h2 class="name" id="name--0">Spelare 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </div>
+      <!-- Player 1 Card -->
+      <div class="player player--1">
+        <h2 class="name" id="name--1">Spelare 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </div>
+      <!-- Player 2 Card -->
+      <div class="player player--2">
+        <h2 class="name" id="name--2">Spelare 3</h2>
+        <p class="score" id="score--2">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--2">0</p>
+        </div>
+      </div>
+      <!-- Player 3 Card -->
+      <div class="player player--3">
+        <h2 class="name" id="name--3">Spelare 4</h2>
+        <p class="score" id="score--3">0</p>
+        <div class="current">
+          <p class="current-label">Nuvarande</p>
+          <p class="current-score" id="current--3">0</p>
+        </div>
+      </div>
+    </section>
+    <!-- Raphael -->
+    <!-- Knappen som används för att rulla tärningen. -->
+    <img src="images/dice1.png" alt="Playing dice" class="dice" id="roll-dice-btn">
+
+    <!-- Raphael -->
+    <!-- Knapp för att starta om spelet. -->
+    <button class="btn btn--new">Starta om</button>
+
+    <!-- Raphael -->
+    <!-- Knapp för att hålla poängen och passera turen till nästa spelare. -->
+    <button class="btn btn--hold">Behåll</button>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>

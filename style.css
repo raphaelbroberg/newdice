@@ -1,0 +1,193 @@
+/* Raphael */
+/* Importerar ny font */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+/* Body */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bungee Spice", sans-serif;  
+  font-weight: 400;
+  color: #333;
+  background-color: #E36414;
+}
+
+/* Raphael */
+/** Main Container **/
+main {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 70%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  border-radius: 9px;
+  border: solid #9A031E 10px;
+  overflow: hidden;
+}
+
+/* Johan */
+/** Player Section **/
+.player-cards {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  transition: all 0.75s;
+  text-align: center;
+}
+
+/* Johan */
+.player {
+  width: 100%;
+  height: auto;
+}
+/** Player Name **/
+.name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+/** Player Score **/
+.score {
+  font-size: 5rem;
+  color: #9A031E;
+}
+
+/* Johan */
+/** Active Player **/
+.player--active {
+  background-color: rgba(223, 245, 255, 0.519);
+}
+.player--active .current {
+  opacity: 1;
+  margin-bottom: 1.5rem;
+}
+
+/* Johan */
+/* Current Scores */
+.current {
+  margin: 0 auto;
+  background-color: #9A031E;
+  opacity: 0.8;
+  border-radius: 9px;
+  border: solid #E36414 5px;
+  width: 70%;
+  text-align: center;
+}
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+.current-score {
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+
+/* Raphael */
+/* Buttons */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #E36414;
+  padding: 1rem;
+  border-radius: 50rem;
+}
+ 
+/* Raphael */
+.btn--new {
+  top: 12%;
+}
+.btn--roll {
+  top: 60%;
+}
+.btn--hold {
+  top: 75%;
+}
+
+/* Raphael */
+/* Buttons on Hover */
+.btn--new:hover {
+  padding: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  background-color: #bf2e34;
+  backdrop-filter: none;
+  color: white;
+  transition: all 0.2s;
+}
+.btn--roll:hover,
+.btn--hold:hover {
+  padding: 1.3rem;
+  transition: all 0.3s;
+}
+
+/* Raphael */
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  height: 8rem;
+}
+
+/* Johan */
+.player--winner {
+  background-color: #F7C566;
+  border: 5px solid white;
+}
+
+/* Raphael */
+/* CSS for the button */
+.btn {
+  /* Your button styles */
+  display: inline-block; /* Ensure button is displayed inline */
+  padding: 10px 20px; /* Add padding for better click area */
+  background-color: #E36414;
+  color: white;
+  text-decoration: none; /* Remove default underline for links */
+  border-radius: 5px;
+}
+
+/* CSS for button hover and focus */
+.btn:hover,
+.btn:focus {
+  background-color: #bf2e34; /* Change background color on hover and focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Yosef */
+.introHText{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.introText{
+  font-size: 2rem;
+  text-align: center;
+}
+
+#start-game-btn{
+  padding: 3rem;
+  font-size: 2rem;
+  border: solid 0.3rem #9A031E;
+  margin-bottom: 5%;
+}
